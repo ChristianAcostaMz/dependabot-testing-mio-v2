@@ -1,0 +1,15 @@
+updateBranch: true
+deleteBranchAfterMerge: true
+reportStatus: true
+
+minApprovals:
+  COLLABORATOR: 0
+maxRequestedChanges:
+  NONE: 0
+
+# Will merge whenever the above conditions are met, but also
+# the owner has approved or merge label was added.
+requiredLabels:
+  - dependencies
+
+mergeCommitMessage: "{title} (#{number})"
